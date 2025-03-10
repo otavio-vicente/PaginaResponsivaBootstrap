@@ -1,0 +1,136 @@
+/* Reset */
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/* Style nav */
+.galindo-regular {
+    font-family: "Galindo", sans-serif;
+    margin: 0%;
+}
+
+nav {
+    background-color: rgb(63, 95, 124);
+    display: flex;
+}
+nav a {
+    align-content: center;
+    margin: 10px;
+    font-size: 18px;
+}
+nav a, h1 {
+    color: #ffffff;
+    text-decoration: none;
+    align-content: center;
+}
+nav #cart {
+    height: 50px;
+    width: 50px;
+}
+nav .btn {
+    height: 50px;
+    width: 100;
+    padding: 10px;
+    border-radius: 10px;
+}
+nav .btn:hover{
+    background-color: rgb(34, 54, 73);
+    color: #ffffff;    
+}
+nav #logo {
+    height: 80px;
+    padding: 0;
+}
+
+
+
+
+/* Responsividade */
+
+@media (max-width: 645px){
+    .form-checkboxBtn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
+@media (max-width: 750px){
+    .card {
+        
+    }
+    
+}
+@media (max-width: 991px) {
+    nav div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0; 
+    }
+
+    .navbar-toggler {
+        margin: 10px 0; 
+    }
+
+    .navbar-collapse {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .nav-item {
+        margin: 5px 0; 
+    }
+
+    #cart {
+        width: 30px; 
+        height: 30px; 
+    }
+}
+
+@media (max-width: 400px) {
+    .navbar-brand {
+        width: 100%;
+        display: flex;
+        justify-content: center; 
+        margin: auto;
+    }
+
+    .navbar-brand h1 {
+        font-size: 1.2rem; 
+    }
+
+    #logo {
+        max-width: 100px; 
+    }
+}
+
+
+section {
+    margin-top: 50px;
+}
+
+body {
+    background-color: #f5efd3;
+}
+
+.btn {
+     background-color:  rgb(63, 95, 124);
+     color: #ffffff;
+}
+.btn:hover {
+    border:  solid rgb(63, 95, 124) 2px;
+    background-color: #ffffff;
+}
+
+.formBtn {
+    width: 200px;
+}
+
+/* Footer */
+footer {
+    background-color: rgb(63, 95, 124);
+}

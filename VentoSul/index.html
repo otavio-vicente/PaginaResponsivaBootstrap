@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Responsiva EAD</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barrio&family=Bebas+Neue&family=Doto:wght@100..900&family=Galindo&family=Montserrat:ital,wght@1,100..900&family=Poppins:wght@500;600;700&family=Sigmar&display=swap" rel="stylesheet">
+
+    
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg w-100">
+    <div class="col-8 container-fluid d-flex justify-content-between align-items-center">
+        
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <img id="logo" src="./imgs/logo.png" alt="">
+            <h1 class="galindo-regular">VentoSul</h1>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarText">
+            <div class="d-flex align-items-center">
+              <a href="#" class="btn nav-item" data-bs-toggle="modal" data-bs-target="#myModal">Sobre</a>
+              <a href="#contato" class="btn mx-2 nav-item">Contato</a>
+              <a href="#" class="nav-item">
+                <img class="btn" id="cart" data-bs-toggle="modal" data-bs-target="#cartModal" src="./imgs/cart.png" alt="">
+              </a>
+            </div>
+        </div>
+
+        
+        <!-- Modal do Sobre Nós -->
+        <div class="modal" tabindex="-1" id="myModal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Sobre nós</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>🙋‍♂️Bem-vindo à VentoSul, o destino definitivo para todos os apaixonados pelo surfe. Fundada por entusiastas do esporte, nossa missão é oferecer pranchas de alta qualidade, que atendem a todas as necessidades dos surfistas, desde iniciantes até os mais experientes.
+                  Nossa loja online traz uma seleção cuidadosamente curada das melhores pranchas de surfe, projetadas para oferecer performance, durabilidade e conforto. Com foco na excelência e no atendimento personalizado, garantimos que cada cliente encontre a prancha perfeita para seu estilo de surfe e nível de habilidade.<br>
+                  
+                  Aproveite para explorar nosso site e fazer parte da nossa comunidade de surfistas!🌊</p>
+              </div>
+            </div>
+          </div>
+        </div> 
+        
+        <!-- Modal do Carrinho de Compras -->
+        <div class="modal" tabindex="-1" id="cartModal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Carrinho de Compras</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div id="cartItems">
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                <button type="button" class="btn btn-primary">Finalizar Compra</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </div>
+  </nav>
+
+
+  <section class="col-12 justify-content-center d-flex">
+      <div id="carouselExampleCaptions" class="carousel slide col-7">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./imgs/img1.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Conquiste o Oceano</h5>
+                <p>Cada prancha, uma nova aventura nas ondas.</p>
+              </div>
+            </div>
+            <div class="carousel-item"> 
+              <img src="./imgs/img2 (2).jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Explore as Ondas com Estilo</h5>
+                <p>Pranchas feitas para quem ama sentir a liberdade do surfe.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./imgs/img3 (2).jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Desperte o Surfista em Você</h5>
+                <p>Prancha nova, surfe novo. Vá para as ondas com confiança.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+      </div>
+  </section>
+
+  <section class="container">
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+  
+      <div class="col">
+        <div class="card w-100 align-items-center shadow-sm rounded" style="height: 20rem;">
+          <img src="./imgs/fish.png" class="card-img-left object-fit-cover mt-1" alt="Maroleira" style="width: 50%;">
+          <div class="card-body text-center d-flex flex-column justify-content-center">
+            <h5 class="card-title">Fish - Maroleira</h5>
+            <p class="card-text">Ideal para ondas pequenas e diversão garantida.</p>
+            <select class="form-select mb-2" aria-label="Default select example">
+              <option selected>Tamanhos disponíveis</option>
+              <option value="5'2">5'2" - 25L</option>
+              <option value="5'8">5'8" - 30L</option>
+              <option value="6'0">6'0" - 35L</option>
+              <option value="6'4">6'4" - 40L</option>  
+            </select>
+            <a href="#" class="btn">Adicionar ao carrinho</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col">
+        <div class="card w-100 align-items-center shadow-sm rounded" style="height: 20rem;"> 
+          <img src="./imgs/short.png" class="card-img-left object-fit-cover mt-2" alt="Performance" style="width: 50%;">
+          <div class="card-body text-center d-flex flex-column justify-content-center">
+            <h5 class="card-title">Pranchinha - Performance</h5>
+            <p class="card-text">Para quem busca alta performance em manobras radicais.</p>
+            <select class="form-select mb-2" aria-label="Default select example">
+              <option selected>Tamanhos disponíveis</option>
+              <option value="5'2">5'2" - 25L</option>
+              <option value="5'8">5'8" - 30L</option>
+              <option value="6'0">6'0" - 35L</option>
+              <option value="6'4">6'4" - 40L</option>    
+            </select>
+            <a href="#" class="btn">Adicionar ao carrinho</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col">
+        <div class="card w-100 align-items-center shadow-sm rounded" style="height: 20rem;">
+          <img src="./imgs/fun.png" class="card-img-left object-fit-cover mt-2" alt="Iniciantes" style="width: 50%;">
+          <div class="card-body text-center d-flex flex-column justify-content-center">
+            <h5 class="card-title">Funboard- Iniciantes</h5>
+            <p class="card-text">Uma prancha estável para aprender a surfar com facilidade.</p>
+            <select class="form-select mb-2" aria-label="Default select example">
+              <option selected>Tamanhos disponíveis</option>
+              <option value="5'2">5'2" - 25L</option>
+              <option value="5'8">5'8" - 30L</option>
+              <option value="6'0">6'0" - 35L</option>
+              <option value="6'4">6'4" - 40L</option>  
+            </select>
+            <a href="#" class="btn">Adicionar ao carrinho</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col">
+        <div class="card w-100 align-items-center shadow-sm rounded" style="height: 20rem;">
+          <img src="./imgs/gun.png" class="card-img-left object-fit-cover mt-4" alt="Ondas Grandes" style="width: 50%;">
+        <div class="card-body text-center d-flex flex-column justify-content-center">
+            <h5 class="card-title">Gun - Ondas Grandes</h5>
+            <p class="card-text">Feita para encarar as ondas mais desafiadoras.</p>
+            <select class="form-select mb-2" aria-label="Default select example">
+              <option selected>Tamanhos disponíveis</option>
+              <option value="5'2">5'2" - 25L</option>
+              <option value="5'8">5'8" - 30L</option>
+              <option value="6'0">6'0" - 35L</option>
+              <option value="6'4">6'4" - 40L</option>  
+            </select>
+            <a href="#" class="btn">Adicionar ao carrinho</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col mx-auto">
+        <div class="card w-100 align-items-center shadow-sm rounded" style="max-height: 20rem;">
+          <img src="./imgs/long.png" class="card-img-left object-fit-cover mt-2" alt="Surf Style" style="width: 50%;">
+          <div class="card-body text-center d-flex flex-column justify-content-center">
+            <h5 class="card-title">Longboard - Surf Style</h5>
+            <p class="card-text">O clássico longboard para um estilo mais relaxado.</p>
+            <select class="form-select mb-2" aria-label="Default select example">
+              <option selected>Tamanhos disponíveis</option>
+              <option value="5'2">5'2" - 25L</option>
+              <option value="5'8">5'8" - 30L</option>
+              <option value="6'0">6'0" - 35L</option>
+              <option value="6'4">6'4" - 40L</option>  
+            </select>
+            <a href="#" class="btn">Adicionar ao carrinho</a>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+
+    <form id="myForm" action="index.html" method="post">
+      <div class="mt-5 mx-auto col-8">
+          <h3 class="text-center" id="contato">Contato</h3>
+          <label for="exampleFormControlInput1" class="form-label">Email</label>
+          <input type="email" class="form-control mb-2" id="exampleFormControlInput1" placeholder="nome@exemplo.com" >
+          <div class="invalid-feedback">Por favor, insira um e-mail válido.</div>
+      </div>
+
+      <div class="form-checkboxBtn mx-auto col-8 d-flex justify-content-between">
+          <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" id="flexCheckChecked">
+              <label class="form-check-label" for="flexCheckChecked">Desejo receber atualizações.</label>
+          </div>
+          <button type="submit" class="btn" id="liveAlertBtn">Enviar</button>
+      </div>
+
+      <div class="d-flex justify-content-center mt-3">
+          <div id="liveAlertPlaceholder" class="col-3 text-center"></div>
+      </div>
+    </form>
+  
+  <footer class="mx-auto w-100 text-center mt-4 text-light p-3 align-items-center">&copy; Todos os direitos reservados. Otávio Henrique Vicente</footer>
+
+    <script>
+      document.getElementById("myForm").addEventListener("submit", function(event) {
+              event.preventDefault();
+              
+              const email = document.getElementById("exampleFormControlInput1");
+              const checkbox = document.getElementById("flexCheckChecked");
+              const alertPlaceholder = document.getElementById("liveAlertPlaceholder");
+  
+              let valid = true;
+              alertPlaceholder.innerHTML = ""; // Limpa alertas antigos
+  
+              // Valida se o e-mail foi preenchido e se é válido
+              if (email.value.trim() === "" || !email.checkValidity()) {
+                  email.classList.add("is-invalid");
+                  valid = false;
+              } else {
+                  email.classList.remove("is-invalid");
+              }
+  
+              // Verifica se o checkbox foi marcado (obrigatório)
+              if (!checkbox.checked) {
+                  checkbox.classList.add("is-invalid");
+                  valid = false;
+              } else {
+                  checkbox.classList.remove("is-invalid");
+              }
+  
+              if (valid) {
+                  // Se válido, exibe alerta de sucesso
+                  const alert = document.createElement("div");
+                  alert.className = "alert alert-success alert-dismissible fade show";
+                  alert.role = "alert";
+                  alert.innerHTML = `
+                      Formulário enviado com sucesso!
+                      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                  `;
+                  alertPlaceholder.appendChild(alert);
+              }
+        });
+    </script>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
